@@ -18,7 +18,7 @@ app.use(cors(
 ));
 app.use(express.json());
 
-app.use('/api', taskRoutes);
+app.use('/api/v1', taskRoutes);
 
 const PORT = process.env.PORT || 5005;
 app.listen(PORT, () => {
